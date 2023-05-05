@@ -1,0 +1,6 @@
+<h1>新規投稿ページ</h1>
+<%= form_with url: "/posts", method: :post, local: true do |f| %>
+<!--methodオプションの初期値は:postなので、postメソッドを指定する場合は省略することが可能-->
+  <%= f.text_field :content %>
+  <%= f.submit '投稿する' %>
+<% end %>
